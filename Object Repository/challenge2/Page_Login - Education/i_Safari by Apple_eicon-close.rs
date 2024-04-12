@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_Safari by Apple_eicon-close</name>
+   <tag></tag>
+   <elementGuidId>501c5f5a-20ea-41cf-b501-12e8c70bc647</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#elementor-popup-modal-67718 > div.dialog-widget-content.dialog-lightbox-widget-content.animated > a.dialog-close-button.dialog-lightbox-close-button > i.eicon-close</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='elementor-popup-modal-67718']/div/a/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#elementor-popup-modal-67718 >> internal:label=&quot;Close&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>cc1440ec-cdf8-475f-8d1e-570956a00ca4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>eicon-close</value>
+      <webElementGuid>0c95323d-9c34-4698-ba8b-fd75256dcc52</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;elementor-popup-modal-67718&quot;)/div[@class=&quot;dialog-widget-content dialog-lightbox-widget-content animated&quot;]/a[@class=&quot;dialog-close-button dialog-lightbox-close-button&quot;]/i[@class=&quot;eicon-close&quot;]</value>
+      <webElementGuid>1a15d418-4701-465e-9c46-044cace440e1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='elementor-popup-modal-67718']/div/a/i</value>
+      <webElementGuid>d1d3bac2-8bc0-4c0f-a30d-3c00f01e386b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/a/i</value>
+      <webElementGuid>a30d38aa-7cb8-4072-b0b6-a731d4e91fec</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

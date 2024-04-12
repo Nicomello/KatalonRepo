@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>print the number of jobs in the category &quot;Evangelism&quot; from the website</description>
+   <name>jobsforCatEvangelism</name>
+   <tag>jobs</tag>
+   <comment></comment>
+   <testCaseGuid>eb17238c-df7b-4493-ba24-3991d8f9872f</testCaseGuid>
+</TestCaseEntity>
