@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_Linkedin_eicon-close</name>
+   <tag></tag>
+   <elementGuidId>8ec93e89-a37e-4bde-931f-9ea5990dd20f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.dialog-close-button.dialog-lightbox-close-button > i.eicon-close</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='elementor-popup-modal-67215']/div/a/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Close&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>64e9a32b-ce7f-4d7a-82b3-6a616c4709f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>eicon-close</value>
+      <webElementGuid>1ca4e809-47b1-4e84-a1a6-cc662e0470e9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;elementor-popup-modal-67215&quot;)/div[@class=&quot;dialog-widget-content dialog-lightbox-widget-content animated&quot;]/a[@class=&quot;dialog-close-button dialog-lightbox-close-button&quot;]/i[@class=&quot;eicon-close&quot;]</value>
+      <webElementGuid>31b94eb9-e142-467a-aa83-b05af1fec065</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='elementor-popup-modal-67215']/div/a/i</value>
+      <webElementGuid>2e6a143f-401d-4a78-8eab-361a3cfa9f67</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/a/i</value>
+      <webElementGuid>9bca654b-9f96-4aa1-8adb-7872cedb0331</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

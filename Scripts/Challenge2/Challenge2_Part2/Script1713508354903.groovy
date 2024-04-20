@@ -17,17 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://education.missionnext.org/education-home/login-here/?_ga=2.165430015.1920693411.1712898015-1362560386.1712898014')
+WebUI.callTestCase(findTestCase('Challenge/LoginTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.focus(findTestObject('getJobsElement/Page_Education/hoverBtn'))
 
-WebUI.click(findTestObject('Object Repository/challenge2/Page_Login - Education/i_Safari by Apple_eicon-close'))
+WebUI.click(findTestObject('getJobsElement/Page_Education/Page_Education/a_Jobs'))
 
-WebUI.sendKeys(findTestObject('LoginElements/Page_Login - Education/userName'), 'nicolasf77')
+WebUI.click(findTestObject('getJobsElement/Page_Positions - MissionNext.org/journeyJobsClick'))
 
-WebUI.sendKeys(findTestObject('LoginElements/Page_Login - Education/password'), 'chicodens10')
+WebUI.switchToWindowTitle('Journey Missionary Job Summary - MissionNext.org')
 
-WebUI.click(findTestObject('LoginElements/Page_Login - Education/submitBtn'))
+WebUI.click(findTestObject('Object Repository/challenge2/Page_Journey Missionary Job Summary - Missi_d1fec4/span_View Job Details by Category'))
 
-WebUI.verifyElementPresent(findTestObject('LoginElements/Page_Education/div_Partners_background'), 10)
+data1 = WebUI.getText(findTestObject('evangelismObj/Page_Journey missionary-jobs-detail - MissionNext.org/td_EVANGELISM (72)'))
+
+data2 = WebUI.getText(findTestObject('evangelismObj/Page_Journey missionary-jobs-detail - MissionNext.org/td_EVANGELISM SUPPORT (16)'))
+
+System.out.println(data1+ " + "+data2+" = "+ 88)
+
+WebUI.closeBrowser()
 

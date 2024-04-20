@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_EVANGELISM</name>
+   <tag></tag>
+   <elementGuidId>0cd7914d-e19c-4e2a-abd1-fa7db9d176b2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>tr:nth-of-type(142) > td</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='content']/div/section[4]/div/div/div/div/div/table/tbody/tr[142]/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;EVANGELISM Mission Catalyst Among Bosnian Muslims in Greater Detroit North America&quot;i] >> internal:role=cell >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>f86eab13-fd78-4f8e-bb70-141abc53fbff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>EVANGELISM</value>
+      <webElementGuid>fb9afca5-531c-4e22-919b-c20c40b1e66e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;content&quot;)/div[@class=&quot;elementor elementor-46194 elementor-motion-effects-parent&quot;]/section[@class=&quot;elementor-section elementor-top-section elementor-element elementor-element-28908af2 elementor-section-boxed elementor-section-height-default elementor-section-height-default&quot;]/div[@class=&quot;elementor-container elementor-column-gap-default&quot;]/div[@class=&quot;elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-759551c1&quot;]/div[@class=&quot;elementor-widget-wrap elementor-element-populated&quot;]/div[@class=&quot;elementor-element elementor-element-5cfc81e elementor-widget elementor-widget-text-editor&quot;]/div[@class=&quot;elementor-widget-container&quot;]/table[1]/tbody[1]/tr[142]/td[1]</value>
+      <webElementGuid>655094d5-99dd-4e0f-b904-8e70a2f876b0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='content']/div/section[4]/div/div/div/div/div/table/tbody/tr[142]/td</value>
+      <webElementGuid>40d74b38-90a4-47f6-8159-99476abc3079</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Southeast Asia'])[14]/following::td[2]</value>
+      <webElementGuid>74cc69f7-23f8-44c4-b301-cccc452a46b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TESOL or ESL Teacher in Cambodia'])[1]/following::td[3]</value>
+      <webElementGuid>2bbdc428-b20b-49d4-8dd2-84957d1f0b00</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mission Catalyst Among Bosnian Muslims in Greater Detroit'])[1]/preceding::td[1]</value>
+      <webElementGuid>369ee210-9a0f-45d7-aec0-725f7fc20641</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='North America'])[29]/preceding::td[2]</value>
+      <webElementGuid>97ca0ef2-a0a5-4180-9b77-35396c6f6aa5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='EVANGELISM']/parent::*</value>
+      <webElementGuid>52e3fa6b-1b10-4be7-8b9c-a76a7ab85436</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[142]/td</value>
+      <webElementGuid>68d555a8-7037-43b9-a82f-182e7f86aad7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'EVANGELISM' or . = 'EVANGELISM')]</value>
+      <webElementGuid>7d6131ef-b234-42b3-9310-017f0824ad07</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>challenge2_Part1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9139d6a4-7e41-4d5f-8a6a-2db8f29fb64f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b0ac36e2-07d7-451f-9db7-1f8517797943</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b0ac36e2-07d7-451f-9db7-1f8517797943</id>
+      <masked>false</masked>
+      <name>data1</name>
+   </variable>
+</TestCaseEntity>
