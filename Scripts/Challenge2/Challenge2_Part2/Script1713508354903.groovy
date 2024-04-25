@@ -20,7 +20,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By as By
-
+import org.openqa.selenium.chrome.ChromeDriver
 
 
 WebUI.callTestCase(findTestCase('Challenge/LoginTest'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -38,33 +38,32 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 String ExpectedValue = "EVANGELISM";
 
-WebElement Table = driver.findElement(By.xpath("//table[1]/tbody[1]"))
+WebElement Table = driver.findElement(By.xpath("//table/tbody"))
 
 List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 int rows_count = rows_table.size()
 int jobCount = 0
- 
+
 Loop:
-for (int row = 0; row < rows_count; row++) {
+for (int row = 0; row < rows_count ; row++) {
 
-List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td')) 
-int columns_count = Columns_row.size()
-println((('Number of cells In Row ' + row) + ' are ') + columns_count)
+	List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
+	int columns_count = Columns_row.size()
 
+	for (int column = 0; column < columns_count; column++) {
 
-for (int column = 0; column < columns_count; column++) {
+		String celltext = Columns_row.get(column).getText()
+		
+		println("Row: $row, Column: $column, Text: $celltext")
 
-String celltext = Columns_row.get(column).getText()
- 
-
-if (celltext == ExpectedValue) {
-'Getting the count up by 1 if cell text i.e Company name matches with Expected value'
-	jobCount++
+		if (celltext.contains(ExpectedValue)) {
+			'Getting the count up by 1 if cell text matches with Expected value'
+			jobCount++
+			System.out.println(jobCount+ " jobs for Evangelism found")		}
+	}
 }
-}
-}
 
-System.out.println("The number of job avai;able for both categories of Evangelism is: "+ jobCount)
+System.out.println("The total number of jobs available for both categories of Evangelism is: "+ jobCount)
 
 WebUI.closeBrowser()
 
