@@ -22,7 +22,6 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By as By
 import org.openqa.selenium.chrome.ChromeDriver
 
-
 WebUI.callTestCase(findTestCase('Challenge/LoginTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.focus(findTestObject('getJobsElement/Page_Education/hoverBtn'))
@@ -32,10 +31,7 @@ WebUI.click(findTestObject('getJobsElement/Page_Education/Page_Education/a_Jobs'
 WebUI.click(findTestObject('getJobsElement/Page_Positions - MissionNext.org/journeyJobsClick'))
 
 WebUI.switchToWindowTitle('Journey Missionary Job Summary - MissionNext.org')
-
-
 WebDriver driver = DriverFactory.getWebDriver()
-
 String ExpectedValue = "EVANGELISM";
 
 WebElement Table = driver.findElement(By.xpath("//table/tbody"))
@@ -53,7 +49,7 @@ for (int row = 0; row < rows_count ; row++) {
 	for (int column = 0; column < columns_count; column++) {
 
 		String celltext = Columns_row.get(column).getText()
-		
+
 		println("Row: $row, Column: $column, Text: $celltext")
 
 		if (celltext.contains(ExpectedValue)) {
@@ -66,4 +62,5 @@ for (int row = 0; row < rows_count ; row++) {
 System.out.println("The total number of jobs available for both categories of Evangelism is: "+ jobCount)
 
 WebUI.closeBrowser()
+
 
