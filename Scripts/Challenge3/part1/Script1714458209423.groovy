@@ -39,8 +39,8 @@ for (int row = 1; row <= findTestData('challenge3_csvFile').getRowNumbers(); row
             1, row))
 
     //WebUI.setEncryptedText(findTestObject('loginpageElements/Page_Login - Journey/input_Password_pwd'), password)
-    WebUI.setEncryptedText(findTestObject('loginpageElements/Page_Login - Journey/input_Password_pwd'), findTestData('challenge3_csvFile').getValue(
-            2, row))
+//    WebUI.setEncryptedText(findTestObject('loginpageElements/Page_Login - Journey/input_Password_pwd'), findTestData('challenge3_csvFile').getValue(
+//            2, row))
 
    WebUI.setText(findTestObject('loginpageElements/Page_Login - Journey/input_Password_pwd'), findTestData('challenge3_csvFile').getValue(
             2, row))

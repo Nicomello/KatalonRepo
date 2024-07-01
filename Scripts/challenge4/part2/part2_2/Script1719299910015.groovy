@@ -17,17 +17,58 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://education.missionnext.org/education-home/login-here/?_ga=2.165430015.1920693411.1712898015-1362560386.1712898014')
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.SQLException
+import java.sql.Statement
+import java.sql.ResultSet
 
-WebUI.maximizeWindow()
+// Database credentials
+String url = "jdbc:postgresql://localhost:5432/postgres"
+String user = "postgres"
+String password = "Nicolas3"
 
-WebUI.click(findTestObject('Object Repository/challenge2/Page_Login - Education/i_Safari by Apple_eicon-close'))
+Connection connection = null
+Statement statement = null
+ResultSet resultSet = null
 
-WebUI.sendKeys(findTestObject('LoginElements/Page_Login - Education/userName'), 'nicolasf77')
+try {
+	Class.forName("org.postgresql.Driver")
 
-WebUI.sendKeys(findTestObject('LoginElements/Page_Login - Education/password'), 'chicodens10')
+	// make the connection
+	connection = DriverManager.getConnection(url, user, password)
+	statement = connection.createStatement()
 
-WebUI.click(findTestObject('LoginElements/Page_Login - Education/submitBtn'))
-
-WebUI.verifyElementPresent(findTestObject('LoginElements/Page_Education/div_Partners_background'), ${GlobalVariable.timeout})
-
+	resultSet = statement.executeQuery('SELECT * from public."theusers"')
+	
+	int count = 0;
+	while (resultSet.next()) {
+		if(resultSet.getString("Username"))
+			count++;
+	}
+	
+	println("number of rows: "+count);
+	
+	
+	
+	
+} catch (ClassNotFoundException e) {
+	e.printStackTrace()
+} catch (SQLException e) {
+	e.printStackTrace()
+} finally {
+	// Close the result set, statement, and connection
+	try {
+		if (resultSet != null) {
+			resultSet.close()
+		}
+		if (statement != null) {
+			statement.close()
+		}
+		if (connection != null) {
+			connection.close()
+		}
+	} catch (SQLException e) {
+		e.printStackTrace()
+	}
+}

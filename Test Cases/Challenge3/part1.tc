@@ -4,6 +4,7 @@
    <name>part1</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>14622022-a3e8-427c-95b4-5a6394ead1f1</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

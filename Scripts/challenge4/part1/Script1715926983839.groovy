@@ -20,7 +20,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-// login process
+
 WebUI.callTestCase(findTestCase('Challenge/LoginTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.focus(findTestObject('getJobsElement/Page_Education/hoverBtn'))
@@ -47,11 +47,13 @@ WebUI.delay(2)
 		// Wait 
 		WebUI.delay(2)
 	
-		// find the elemenet containing "Job ID"
+		// find the element
 		List<WebElement> jobIDElements = driver.findElements(By.xpath('//*[contains(text(),\'Job ID\')]'))
 	
-		// Get the count
+	
 		int jobIDCount = jobIDElements.size()
+		
+		
 		
 		// sum up the job number
 		totalJobCount += jobIDCount;
