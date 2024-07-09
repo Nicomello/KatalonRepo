@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Challenge2_Part2</name>
+   <name>testingIntegrationwithCsv</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>38b5384d-850e-4824-93f3-6b506a0670be</testCaseGuid>
+   <testCaseGuid>b8cbad71-bbc6-4345-9a08-49e10cecd602</testCaseGuid>
 </TestCaseEntity>

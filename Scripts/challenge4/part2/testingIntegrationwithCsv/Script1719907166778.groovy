@@ -19,65 +19,58 @@ import org.openqa.selenium.Keys as Keys
 
 import java.sql.Connection
 import java.sql.DriverManager
+import java.sql.PreparedStatement
 import java.sql.SQLException
-import java.sql.Statement
-import java.sql.ResultSet
+import com.kms.katalon.core.testdata.TestData
+import com.kms.katalon.core.testdata.TestDataFactory
 
-// Database credentials
+
+
+
 String url = "jdbc:postgresql://localhost:5432/postgres"
 String user = "postgres"
 String password = "Nicolas3"
 
+// Load CSV data 
+TestData csvData = findTestData('Challenge3_csvFile') 
+
+
+
 Connection connection = null
-Statement statement = null
-ResultSet resultSet = null
-
 try {
-	Class.forName("org.postgresql.Driver")
-
-	// make the connection
 	connection = DriverManager.getConnection(url, user, password)
-	statement = connection.createStatement()
-
-	resultSet = statement.executeQuery('SELECT * from public."theusers"')
-	
-	
-	for (int row = 1; row <= findTestData('challenge3_csvFile').getRowNumbers(); row++) {
-		for(int col = 1; col <= 3; col++) {
-		String data = findTestData('challenge3_csvFile').getValue(col,row)
-		resultSet = statement.executeQuery('INSERT INTO public."theusers"("Username") Values ('+data+');')
-		}
-	}
-	
-	
-	int count = 0;
-	while (resultSet.next()) {
-		if(resultSet.getString("Username"))
-			count++;
-	}
-	
-	println("number of rows: "+count);
-	
-	
-	
-	
-} catch (ClassNotFoundException e) {
-	e.printStackTrace()
+	println("Connected to the database successfully.")
 } catch (SQLException e) {
-	e.printStackTrace()
-} finally {
-	// Close the result set, statement, and connection
-	try {
-		if (resultSet != null) {
-			resultSet.close()
-		}
-		if (statement != null) {
-			statement.close()
-		}
-		if (connection != null) {
-			connection.close()
-		}
-	} catch (SQLException e) {
-		e.printStackTrace()
-	}
+	println(e.getMessage())
 }
+
+
+if (connection == null) {
+	println("Connection failws")
+	return
+}
+
+// Inserting data into the database
+String query = "INSERT INTO public.theusers (column1, column2, column3) VALUES (?, ?, ?)"
+PreparedStatement pstmt = connection.prepareStatement(query)
+
+
+
+// Loop through CSV data
+for (def rowIndex = 1; rowIndex <= csvData.getRowNumbers(); rowIndex++) {
+    String column1 = csvData.getValue(1, rowIndex)
+    String column2 = csvData.getValue(2, rowIndex)
+    String column3 = csvData.getValue(3, rowIndex)
+
+    pstmt.setString(1, column1)
+     pstmt.setString(2, column2)
+     pstmt.setString(3, column3)
+    
+}
+
+pstmt.executeBatch()
+println("Data has been inserted successfully.")
+
+// Closing 
+pstmt.close()
+connection.close()

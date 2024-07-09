@@ -7,17 +7,20 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>36ff83b7-1350-40bc-93c7-6474fdcbba64</dataFileGUID>
-   <dataSourceUrl></dataSourceUrl>
+   <dataSourceUrl>jdbc:postgresql://localhost:5432/postgres?currentSchema=public</dataSourceUrl>
    <driver>DBData</driver>
+   <driverClassName></driverClassName>
    <isInternalPath>false</isInternalPath>
+   <password>Tmljb2xhczM=</password>
    <properties>
       <entry>
          <key>readAsString</key>
          <value>false</value>
       </entry>
    </properties>
-   <query></query>
-   <secureUserAccount>false</secureUserAccount>
+   <query>select * from public.&quot;theusers&quot;</query>
+   <secureUserAccount>true</secureUserAccount>
    <sheetName></sheetName>
+   <user>postgres</user>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

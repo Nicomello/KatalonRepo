@@ -4,6 +4,7 @@
    <name>challenge2_Part1</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>9139d6a4-7e41-4d5f-8a6a-2db8f29fb64f</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
