@@ -46,7 +46,7 @@ try {
 
 
 if (connection == null) {
-	println("Connection failws")
+	println("Connection fails")
 	return
 }
 
